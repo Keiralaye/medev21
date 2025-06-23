@@ -1,0 +1,44 @@
+ <!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mini Calculatrice</title>
+</head>
+<body>
+    <div>
+        <h2>Mini Calculatrice</h2>
+        <input type="number" id="nombre1" placeholder="Premier nombre">
+        <select id="operation">
+            <option value="+">Addition (+)</option>
+            <option value="-">Soustraction (-)</option>
+            <option value="*">Multiplication (×)</option>
+            <option value="/">Division (÷)</option>
+        </select>
+        <input type="number" id="nombre2" placeholder="Deuxième nombre">
+        <button onclick="calculer()">Calculer</button>
+        <div id="resultat"></div>
+    </div>
+    <script> 
+        function calculer() {
+            let n1 = Number(document.getElementById('nombre1').value);
+            let n2 = Number(document.getElementById('nombre2').value);
+            let op = document.getElementById('operation').value;
+            let res;
+            if (op === "+") {
+                res = n1 + n2;
+            } else if (op === "-") {
+                res = n1 - n2;
+            } else if (op === "*") {
+                res = n1 * n2;
+            } else if (op === "/") {
+                if (n2 === 0) {
+                    document.getElementById('resultat').innerText = "Erreur : division par zéro";
+                    return;
+                }
+                res = n1 / n2;
+            }
+            document.getElementById('resultat').innerText = "Résultat : " + res;
+        }
+    </script>
+</body>
+</html>

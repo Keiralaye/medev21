@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    let nombre = Number (prompt("Entrez un nombre :"));
+    if (nombre % 2 === 0) {
+        alert("le nombre est pair.")
+    } else {
+        alert("le nombre est impair.");
+    }
+
+    let age = Number(prompt("Entrez votre âge :"));
+    if (age >= 18) {
+        alert("Vous êtes majeur.");
+    } else {
+        alert("Vous êtes mineur.");
+    }
+
+    let nombre = Number(prompt("Entrez un nombre :"));
+    if (nombre > 0) {
+        alert("Le nombre est positif.");
+    } else if (nombre < 0) {
+        alert("Le nombre est négatif.");
+    } else {
+        alert("Le nombre est égal à zéro.");
+    }
+
+    let motDePasse = prompt("Entrez le mot de passe :");
+    if (motDePasse === "1234") {
+        alert("Accès autorisé");
+    } else {
+        alert("Mot de passe incorrect");
+    }
+
+    let note1 = Number(prompt("Entrez la première note :"));
+    let note2 = Number(prompt("Entrez la deuxième note :"));
+    let note3 = Number(prompt("Entrez la troisième note :"));
+    let moyenne = (note1 + note2 + note3) / 3;
+
+    if (moyenne >= 16) {
+        alert("Excellent");
+    } else if (moyenne >= 14) {
+        alert("Bien");
+    } else if (moyenne >= 12) {
+        alert("Assez bien");
+    } else if (moyenne >= 10) {
+        alert("Passable");
+    } else {
+        alert("Échec");
+    }
+
+    
+
+</script>
+</body>
+</html>

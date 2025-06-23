@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini Fournisseur Internet</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <header id="main-header">Mouna Net • Internet en Guinée</header>
+
+  
+  <section>
+  <h2>Choisissez votre offre</h2>
+  <button class="my-button">Résidentiel</button>
+  <button class="my-button">Corporate</button>
+  <button class="my-button">Pro</button>
+</section>
+
+  <div id="hover-zone">
+  Survolez ici pour voir un tarif spécial
+  <button id="special-offer-btn">Voir l’offre</button>
+</div>
+
+  
+  <p>
+  Recherche rapide :
+  <input type="text" id="search-input" placeholder="Tapez ici...">
+  <span id="key-display">...</span>
+</p>
+
+  
+  <div id="screen-info"></div>
+
+  <form id="my-form">
+    <label for="email">Votre email :</label>
+    <input type="text" id="email" placeholder="Votre email" required>
+    <button type="submit">Envoyer</button>
+  </form>
+
+  <div id="parent" style="background:#ffa; padding:20px; margin-top:20px;">
+    Parent (clique ici)
+    <div id="child" style="background:#fff; margin-top:10px; padding:10px;">
+      Enfant (clique ici)
+    </div>
+  </div>
+
+
+  <button id="temp-button" class="cacher">Clique vite (5s)</button>
+
+
+  <button id="onclick-button" class="cacher">Onclick Test</button>
+
+
+  <button id="color-button" class="cacher">Changer la couleur princip<div id="color-box" class="cacher">Zone à couleur dynamique</div>ale</button>
+  
+  <script src="script.js"></script>
+</body>
+</html>

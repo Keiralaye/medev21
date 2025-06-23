@@ -1,0 +1,21 @@
+
+.my-button.active {
+  background: #28a745;
+  color: #fff;
+}
+
+:root {
+  --main-color: #0077cc;
+}
+body { font-family: sans-serif; padding: 20px; }
+#main-header { background: var(--main-color); color: #fff; padding: 20px; position: sticky; top: 0; transition: background 0.5s;}
+.my-button { padding:10px; margin:5px; background:#0077cc; color:#fff; cursor:pointer; }
+#hover-zone { background:#eee; padding:20px; margin:20px 0; transition: background 0.3s;}
+#parent { background:#ffa; padding:20px; margin-top:20px; }
+#child { background:#fff; margin-top:10px; padding:10px; }
+#screen-info { font-weight:bold; margin-top:20px;}
+#color-box { margin-top:20px; padding:20px; background:var(--main-color); color:#fff; transition: background 0.5s;}
+
+.cacher {
+  display: none;
+}
